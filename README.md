@@ -3,8 +3,10 @@
 1. **Full Project Process & MBA Operations Workflow**
    Step 1: **Excel Data Input & Schema (Operations_Data)**
     - Click Excel Template in the toolbar to download ApexOps_Operations_Data_Template.xlsx.
-    - **Operations_Data:** Pre-filled with 24 months (FY 2025 – FY 2026) across 5 departments (Fulfillment & Logistics, Order Processing, Technical Support, Customer Operations, Field Engineering)  and 3 regions (North America, EMEA, APAC).
-    - **Data_Dictionary:** Explains all 18 columns (Period, Year, Month, Quarter, Department, Region, Demand_Units, Available_Capacity_Units, Throughput_Units, Beginning_Backlog, Ending_Backlog, SLA_Target_Pct, SLA_Actual_Pct, Active_FTE, Operating_Hours_Per_FTE, Overtime_Hours, Cost_Per_Unit_USD).
+    - **Operations_Data:**
+      - Pre-filled with 24 months (FY 2025 – FY 2026) across 5 departments (Fulfillment & Logistics, Order Processing, Technical Support, Customer Operations, Field Engineering)  and 3 regions (North America, EMEA, APAC).
+    - **Data_Dictionary:**
+      - Explains all 18 columns (Period, Year, Month, Quarter, Department, Region, Demand_Units, Available_Capacity_Units, Throughput_Units, Beginning_Backlog, Ending_Backlog, SLA_Target_Pct, SLA_Actual_Pct, Active_FTE, Operating_Hours_Per_FTE, Overtime_Hours, Cost_Per_Unit_USD).
    Step 2: **Automated Operations Analytics Engine**
    Once Excel data is loaded, the dashboard calculates MBA-level operations metrics instantaneously:
     - **Capacity Gap & Utilization:**
