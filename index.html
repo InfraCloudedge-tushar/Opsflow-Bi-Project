@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      (function () {
+        try {
+          var d = Object.getOwnPropertyDescriptor(window, 'fetch');
+          if (d && d.configurable && d.get && !d.set) {
+            Object.defineProperty(window, 'fetch', {
+              get: d.get,
+              set: function () {},
+              enumerable: d.enumerable,
+              configurable: true,
+            });
+          }
+        } catch (_) {}
+        window.addEventListener(
+          'error',
+          function (e) {
+            var src = (e && e.filename) || '';
+            var stack = (e && e.error && e.error.stack) || '';
+            if (src.indexOf('chrome-extension://') === 0 || stack.indexOf('chrome-extension://') !== -1) {
+              e.preventDefault();
+              e.stopImmediatePropagation();
+            }
+          },
+          true
+        );
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpsFlow BI — Operations KPI &amp; Capacity Management Dashboard</title>
+    <meta name="description" content="Excel-driven Operations KPI, Capacity Management, Bottleneck Diagnostics, YoY Trend Analysis, and Resource Planning Dashboard." />
+    <meta property="og:title" content="OpsFlow BI — Operations KPI &amp; Capacity Management Dashboard" />
+    <meta property="og:description" content="Excel-driven Operations KPI, Capacity Management, Bottleneck Diagnostics, YoY Trend Analysis, and Resource Planning Dashboard." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

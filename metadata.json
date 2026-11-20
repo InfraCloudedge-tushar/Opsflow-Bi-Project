@@ -1,0 +1,6 @@
+{
+  "name": "ApexOps BI — Operations KPI & Capacity Management Dashboard",
+  "description": "Excel-driven MBA-level Operations KPI, Capacity Management, Bottleneck Analysis, Year-over-Year Trend, and Resource Planning BI Dashboard with PDF and Excel reporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
